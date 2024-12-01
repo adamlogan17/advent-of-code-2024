@@ -23,9 +23,12 @@ def calc_distance(left_col, right_col):
 
     return distance
 
-if __name__ == "__main__":    
+if __name__ == "__main__":
+    short_left_col = [3, 4, 2, 1, 3, 3]
+    short_right_col = [4, 3, 5, 3, 9, 3]
+    
     left_col, right_col = read_input()
     
-    distance = calc_distance(left_col, right_col)
+    answer = calc_distance(left_col, right_col)
 
-    print(distance)
+    print(answer)
