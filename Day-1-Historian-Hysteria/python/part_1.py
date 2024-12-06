@@ -4,7 +4,7 @@ def read_input():
     left_col = []
     right_col = []
 
-    with open('input.txt', 'r') as file:
+    with open('../input.txt', 'r') as file:
         for line in file:
             left, right = map(int, line.split())
             left_col.append(left)
