@@ -1,14 +1,17 @@
 from copy import deepcopy
 
-def read_input():
+from ...utils.python.utils import read_input
+
+def transform_input():
     left_col = []
     right_col = []
 
-    with open('../input.txt', 'r') as file:
-        for line in file:
-            left, right = map(int, line.split())
-            left_col.append(left)
-            right_col.append(right)
+    file = read_input()
+
+    for line in file:
+        left, right = map(int, line.split())
+        left_col.append(left)
+        right_col.append(right)
 
     return left_col, right_col
 
